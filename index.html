@@ -1,0 +1,233 @@
+<div class="circles">
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+</div>
+
+<style>
+
+body {
+  background: #212121;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.circles {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  transform-style: preserve-3d;
+  transform: perspective(500px) rotateX(60deg);
+}
+.circles > .circle {
+  position: absolute;
+  border: 5px solid #c299fc;
+  border-radius: 50%;
+  box-shadow: 0 5px 0 #8807f9, inset 0 5px 15px 5px #000;
+  animation: pull 3s ease-in-out backwards infinite alternate;
+}
+.circles > .circle:nth-child(1) {
+  top: 10px;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  animation-delay: 0.05s;
+}
+.circles > .circle:nth-child(2) {
+  top: 20px;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  animation-delay: 0.1s;
+}
+.circles > .circle:nth-child(3) {
+  top: 30px;
+  bottom: 30px;
+  left: 30px;
+  right: 30px;
+  animation-delay: 0.15s;
+}
+.circles > .circle:nth-child(4) {
+  top: 40px;
+  bottom: 40px;
+  left: 40px;
+  right: 40px;
+  animation-delay: 0.2s;
+}
+.circles > .circle:nth-child(5) {
+  top: 50px;
+  bottom: 50px;
+  left: 50px;
+  right: 50px;
+  animation-delay: 0.25s;
+}
+.circles > .circle:nth-child(6) {
+  top: 60px;
+  bottom: 60px;
+  left: 60px;
+  right: 60px;
+  animation-delay: 0.3s;
+}
+.circles > .circle:nth-child(7) {
+  top: 70px;
+  bottom: 70px;
+  left: 70px;
+  right: 70px;
+  animation-delay: 0.35s;
+}
+.circles > .circle:nth-child(8) {
+  top: 80px;
+  bottom: 80px;
+  left: 80px;
+  right: 80px;
+  animation-delay: 0.4s;
+}
+.circles > .circle:nth-child(9) {
+  top: 90px;
+  bottom: 90px;
+  left: 90px;
+  right: 90px;
+  animation-delay: 0.45s;
+}
+.circles > .circle:nth-child(10) {
+  top: 100px;
+  bottom: 100px;
+  left: 100px;
+  right: 100px;
+  animation-delay: 0.5s;
+}
+.circles > .circle:nth-child(11) {
+  top: 110px;
+  bottom: 110px;
+  left: 110px;
+  right: 110px;
+  animation-delay: 0.55s;
+}
+.circles > .circle:nth-child(12) {
+  top: 120px;
+  bottom: 120px;
+  left: 120px;
+  right: 120px;
+  animation-delay: 0.6s;
+}
+.circles > .circle:nth-child(13) {
+  top: 130px;
+  bottom: 130px;
+  left: 130px;
+  right: 130px;
+  animation-delay: 0.65s;
+}
+.circles > .circle:nth-child(14) {
+  top: 140px;
+  bottom: 140px;
+  left: 140px;
+  right: 140px;
+  animation-delay: 0.7s;
+}
+.circles > .circle:nth-child(15) {
+  top: 150px;
+  bottom: 150px;
+  left: 150px;
+  right: 150px;
+  animation-delay: 0.75s;
+}
+.circles > .circle:nth-child(16) {
+  top: 160px;
+  bottom: 160px;
+  left: 160px;
+  right: 160px;
+  animation-delay: 0.8s;
+}
+.circles > .circle:nth-child(17) {
+  top: 170px;
+  bottom: 170px;
+  left: 170px;
+  right: 170px;
+  animation-delay: 0.85s;
+}
+.circles > .circle:nth-child(18) {
+  top: 180px;
+  bottom: 180px;
+  left: 180px;
+  right: 180px;
+  animation-delay: 0.9s;
+}
+.circles > .circle:nth-child(19) {
+  top: 190px;
+  bottom: 190px;
+  left: 190px;
+  right: 190px;
+  animation-delay: 0.95s;
+}
+.circles > .circle:nth-child(20) {
+  top: 200px;
+  bottom: 200px;
+  left: 200px;
+  right: 200px;
+  animation-delay: 1s;
+}
+@-moz-keyframes pull {
+  0%, 100% {
+    transform: translateZ(-100px);
+  }
+  50% {
+    transform: translateZ(100px);
+  }
+  to {
+    filter: hue-rotate(360deg) brightness(2);
+  }
+}
+@-webkit-keyframes pull {
+  0%, 100% {
+    transform: translateZ(-100px);
+  }
+  50% {
+    transform: translateZ(100px);
+  }
+  to {
+    filter: hue-rotate(360deg) brightness(2);
+  }
+}
+@-o-keyframes pull {
+  0%, 100% {
+    transform: translateZ(-100px);
+  }
+  50% {
+    transform: translateZ(100px);
+  }
+  to {
+    filter: hue-rotate(360deg) brightness(2);
+  }
+}
+@keyframes pull {
+  0%, 100% {
+    transform: translateZ(-100px);
+  }
+  50% {
+    transform: translateZ(100px);
+  }
+  to {
+    filter: hue-rotate(360deg) brightness(2);
+  }
+}
+
+
+</style>
